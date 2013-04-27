@@ -355,10 +355,10 @@ on boot
     write /sys/devices/platform/omapdss/manager0/gamma 6
 
     # Set - Contrast -
-    write /sys/module/panel_s6e8aa0/parameters/contrast -14
+    # write /sys/module/panel_s6e8aa0/parameters/contrast -14
 
     # Set - Power aware SMP scheduler -
-    write /sys/devices/system/cpu/sched_mc_power_savings 0
+    write /sys/devices/system/cpu/sched_mc_power_savings 1
 
     # Set - Content Adaptive Brightness -
     write /sys/class/backlight/s6e8aa0/acl_set 0
