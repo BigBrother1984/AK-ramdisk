@@ -358,7 +358,7 @@ on boot
     # write /sys/module/panel_s6e8aa0/parameters/contrast -14
 
     # Set - Power aware SMP scheduler -
-    write /sys/devices/system/cpu/sched_mc_power_savings 1
+    write /sys/devices/system/cpu/sched_mc_power_savings 0
 
     # Set - Content Adaptive Brightness -
     write /sys/class/backlight/s6e8aa0/acl_set 0
