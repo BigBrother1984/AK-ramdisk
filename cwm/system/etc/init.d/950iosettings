@@ -29,9 +29,9 @@ while sleep 1; do
     if [ $scheduler == "deadline" ]; then
 
 # deadline tweaks
-echo 350 > /sys/block/mmcblk0/queue/iosched/read_expire;
-echo 2750 > /sys/block/mmcblk0/queue/iosched/write_expire;
-echo 2 > /sys/block/mmcblk0/queue/iosched/writes_starved;
+echo 250 > /sys/block/mmcblk0/queue/iosched/read_expire;
+echo 2500 > /sys/block/mmcblk0/queue/iosched/write_expire;
+echo 1 > /sys/block/mmcblk0/queue/iosched/writes_starved;
 echo 1 > /sys/block/mmcblk0/queue/iosched/front_merges;
 echo 16 > /sys/block/mmcblk0/queue/iosched/fifo_batch;
 
