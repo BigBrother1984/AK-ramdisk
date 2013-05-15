@@ -13,7 +13,7 @@ mount("ext4", "EMMC", "/dev/block/platform/omap/omap_hsmmc.0/by-name/system", "/
 package_extract_dir("cleaner", "/tmp");
 set_perm(0, 0, 0755, "/tmp/cleaner.sh");
 run_program("/tmp/cleaner.sh");
-mount("ext4", "EMMC", "/dev/block/platform/omap/omap_hsmmc.0/by-name/data", "/data");
+mount("ext4", "EMMC", "/dev/block/platform/omap/omap_hsmmc.0/by-name/userdata", "/data");
 package_extract_dir("system", "/system");
 package_extract_dir("data", "/data");
 set_perm(0, 0, 0755, 0755, "/system/lib/modules");
